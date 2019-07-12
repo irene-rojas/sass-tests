@@ -1,12 +1,28 @@
+.App {
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+}
+
 .App-header {
     background-color:red;
         .App-logo {
             background-color: green;
+            width: 200px;
         }
         p {
             color:yellow;
         }
         .App-link {
             color: gray;
+            &:hover {
+                color: black;
+                transform: scale(1.5);
+            }
         }
 }
+
+
+
+// &: compiles as parent name
