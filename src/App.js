@@ -18,6 +18,7 @@ function App() {
 
       <div className="secondDiv">
         This is in the secondDiv.
+        <img className="logo" src={logo} alt="logo"/>
       </div>
 
       <div className="thirdDiv">
