@@ -5,22 +5,14 @@
     background-color: blue;
 }
 
-.App-header {
-    background-color:red;
-        .App-logo {
-            background-color: green;
-            width: 200px;
-        }
-        p {
-            color:yellow;
-        }
-        .App-link {
-            color: gray;
-            &:hover {
-                color: black;
-                transform: scale(1.5);
+.header {
+    background-color: red;
+    font-weight: bold;        
+        .subHeader {
+                background-color: gray;
+                font-weight: normal;
+                color: white;
             }
-        }
 }
 
 
