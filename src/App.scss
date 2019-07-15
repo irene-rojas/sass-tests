@@ -5,24 +5,46 @@
     background-color: blue;
 }
 
-.App-header {
-    background-color:red;
-        .App-logo {
-            background-color: green;
-            width: 200px;
-        }
-        p {
-            color:yellow;
-        }
-        .App-link {
-            color: gray;
-            &:hover {
-                color: black;
-                transform: scale(1.5);
-            }
-        }
+p {
+    margin: 0px;
 }
 
+.header {
+    background-color: red;
+    font-weight: bold;
+    padding: 5px;     
+        .subHeader {
+                background-color: gray;
+                font-weight: normal;
+                color: white;
+            }
+}
+
+.firstDiv {
+    background-color: white;
+    margin: 5px 0px 5px 0px;
+}
+
+.secondDiv {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
+    .logo {
+        width: 100px;
+        background-color: black;
+    }
+    p {
+        color: green;
+        &:hover {
+            color: yellow;
+            border: 1px solid white;
+        }
+    }
+}
+
+.thirdDiv {
+    background-color: yellow;
+}
 
 
 // &: compiles as parent name
