@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import './App.scss';
 
 function App() {
+
   return (
     <div className="App">
 
@@ -18,9 +19,9 @@ function App() {
       </div>
 
       <div className="secondDiv">
-        This is in the secondDiv.
+        <span id="secondIntro">This is in the secondDiv.</span>
         <br/>
-        <p>This is the React logo.</p>
+        <p>This is the React logo ----></p>
         <br/>
         <img className="logo" src={logo} alt="logo"/>
       </div>
