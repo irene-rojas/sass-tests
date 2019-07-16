@@ -15,7 +15,7 @@ function App() {
       </header>
 
       <div className="firstDiv">
-        <p>This is in firstDiv.</p>
+        <p>This is in the firstDiv.</p>
       </div>
 
       <div className="secondDiv">
