@@ -27,7 +27,10 @@ function App() {
       </div>
 
       <div className="thirdDiv">
-          This is in the thirdDiv.
+          <h4>This is in the thirdDiv.</h4>
+          <div className="subThird">
+              Words go here.
+          </div>
       </div>
 
     </div>
