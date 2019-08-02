@@ -115,3 +115,8 @@ p {
 // &: compiles as parent name
 
 // A function usually has a parenthesis appended to the end of the function’s name. A directive / rule starts with an @ character.
+
+// Variables in Sass are scoped using the $ symbol.
+// Acceptable values for variables include numbers, strings, colors, null, lists and maps.
+
+// !default flag = make sure there is a default value for a variable in the event that one is not provided. If a different value is provided, it overwrites !default
