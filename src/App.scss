@@ -6,6 +6,34 @@
     grid-template-columns: repeat(2, auto);
 }
 
+@mixin rotate($degree) {
+    transform: rotate($degree); //Standard CSS
+    -webkit-transform: rotate($degree); //Webkit based
+    -moz-transform: rotate($degree); //Firefox
+    -ms-transform: rotate($degree); //IE
+    -o-transform: rotate($degree); //Opera
+}
+
+@mixin zebra() {
+    @for $i from 1 through 7 {
+        @if ($i % 2 == 1) {
+            .stripe-#{$i} {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
+
+@mixin button-color($height, $width) {
+    @if(($height < $width) and ($width >= 35px)) {
+        background-color: blue;
+    } @else {
+        background-color: green;
+    }
+}
+
+
 .App {
     margin: 0 auto;
     height: 100vh;
@@ -62,7 +90,33 @@ p {
 
 .thirdDiv {
     background-color: yellow;
+    @include grid2x2();
+    grid-row: 1/2;
+    grid-column: 1/2;
+    @include zebra();
+    .subThird {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        border: 1px solid black;
+        @include rotate(90deg);
+    }
+    .zebras {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .buttonDiv {
+        @include button-color(20px, 30px);
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
 }
 
 
 // &: compiles as parent name
+
+// A function usually has a parenthesis appended to the end of the function’s name. A directive / rule starts with an @ character.
+
+// Variables in Sass are scoped using the $ symbol.
+// Acceptable values for variables include numbers, strings, colors, null, lists and maps.
+
+// !default flag = make sure there is a default value for a variable in the event that one is not provided. If a different value is provided, it overwrites !default
